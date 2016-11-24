@@ -64,12 +64,16 @@ a:hover {
 	font-size: 11px;
 }
 
-#header IMG {
-	margin: 25px;
-        padding-top: 240px;
-	text-align: center;
+
+.imgs {
+        margin: 25px;
+        padding-top: 150px;
+        text-align: center;
 }
 
+.im1 {
+        padding-top: 500px;
+}
 
 /** MENU */
 
