@@ -139,6 +139,7 @@ html>body #menu {
 #content {
 	float: left;
 	width: 853px;
+	height: 100%;
 	position:relative;
 	padding: 36px;
 	/*height: 475px;*/
