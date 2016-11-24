@@ -67,10 +67,14 @@ a:hover {
 
 .imgs {
         margin: 25px;
-        padding-top: 150px;
         text-align: center;
 }
 
+.im1 {
+
+        padding-top: 150px;
+
+}
 
 /** MENU */
 
