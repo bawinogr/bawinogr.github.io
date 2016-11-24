@@ -64,6 +64,13 @@ a:hover {
 	font-size: 11px;
 }
 
+#header IMG {
+	margin: 25px;
+        padding-top: 240px;
+	text-align: center;
+}
+
+
 /** MENU */
 
 #menu {
