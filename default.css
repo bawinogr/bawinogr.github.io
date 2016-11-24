@@ -73,7 +73,9 @@ a:hover {
 /** MENU */
 
 #menu {
-	float: right;
+	/*float: right;*/
+	left: 1130px;
+	position:fixed;
 	width: 120px;
 }
 
@@ -126,7 +128,7 @@ html>body #menu {
     width: 100px;
     height: 100px;
     background: white;
-    position: absolute;
+    position: fixed;
     top: 400px;
     left: 1130px;
     right: 0px;
