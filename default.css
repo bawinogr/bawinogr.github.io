@@ -45,7 +45,7 @@ a:hover {
 /** HEADER */
 
 #header {
-	float: left;
+	float: Left;
 	width: 180px;
 	margin-right: 1px;
 	padding: 10px;
@@ -65,30 +65,31 @@ a:hover {
 }
 
 
-.imgs {
-        margin: 25px;
-        text-align: center;
-}
 
-.im1 {
-
-        padding-top: 150px;
-
-}
 
 /** MENU */
 
 #menu {
-	float: left;
+	float: right;
 	width: 120px;
 }
 
 html>body #menu {
 }
 
+
+.imgs {
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+        background-color; #FFFFFF;
+}
+
+
+
 #menu ul {
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 0px 0px 0px;
 	list-style: none;
 }
 
@@ -115,7 +116,16 @@ html>body #menu {
 	border-top: 1px solid #FFFFFF;
 	border-bottom: 1px solid #FFFFFF;
 }
-
+#imgs {
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    bottom: 100px;
+    left: 1130px;
+    right: 0px;
+    text-align: center;
+}
 /** CONTENT */
 
 #content {
@@ -144,7 +154,7 @@ html>body #menu {
 
 #footer p {
 	margin: 0px;
-	padding: 0px 10px;
+	padding: 10px 10px;
 	background-color: #a6afb2;
 	font-size: small;
 	color: #FFFFFF;
