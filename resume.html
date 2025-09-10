@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blair Winograd, PhD - Resume</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .resume-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Styles */
+        .header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin: 5px 0 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        /* Experience Styles */
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+        }
+        
+        .job-company {
+            font-weight: 600;
+            color: #3498db;
+        }
+        
+        .job-date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .job-tags {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tag {
+            background-color: #edf2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #4a5568;
+        }
+        
+        .job-description ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+        }
+        
+        .project {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .project-title {
+            font-weight: 600;
+        }
+        
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            flex: 1 1 250px;
+        }
+        
+        .skill-category-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        /* Publications */
+        .publications-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .publications-list li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .publications-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        /* Awards */
+        .awards-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .award {
+            background-color: #edf2f7;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .degree {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .university {
+            color: #3498db;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .header {
+                text-align: center;
+            }
+            
+            .job-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+        
+        /* For print */
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .resume-container {
+                max-width: 100%;
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <h1 class="name">Blair Winograd, PhD</h1>
+            <p class="subtitle">Product Manager | GenAI Specialist | NLP Expert : Liason between problem, solution and product</p>
+            <div class="contact-info">
+                <span class="contact-item">
+                    <a href="mailto:bawinogr@gmail.com>bawinogr@gmail.com</a>
+                </span>
+                <span class="contact-item">414-232-4466</span>
+                <span class="contact-item">
+                    <a href="https://www.linkedin.com/in/blairwinograd/" target="_blank">linkedin.com/in/blairwinograd</a>
+                </span>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title"><span class="job-company">JD Power</span> - Senior Engineer (P5)</h3>
+                    <span class="job-date">2024 - Present</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">Palantir Platform</span>
+                    <span class="tag">Ontology SDK</span>
+                    <span class="tag">PySpark</span>
+                    <span class="tag">Multi-Agent Systems</span>
+                    <span class="tag">TypeScript</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Lead engineer</strong> working primarily within the Palantir and AWS environments. </li>
+                        <li><strong>Developing</strong> with Ontology SDK, Python/TypeScript functions, and building PySpark transforms</li>
+                        <li><strong>Architecting</strong> workshop prototypes, AI agent evaluators, and complex multi-agentic systems</li>
+                        <li><strong>Leveraging</strong> advanced platform capabilities to deliver high-impact data solutions.</li>
+                        <li><strong>Collaborating</strong> with cross-functional teams to drive innovation and enhance data-driven decision-making. </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title"><span class="job-company">Ford Motor Company</span> - Technical Program Manager,  Data Scientist, Applied Research</h3>
+                    <span class="job-date">2021 - 2024</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">GenAI</span>
+                    <span class="tag">LLMs</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">Palantir</span>
+                    <span class="tag">Noisy Data</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Spearheaded development</strong> of 5 LLM applications integrated within Ford Quality processes through cross-functional leadership:</li>
+                        <div class="project">
+                            <div class="project-title">LLM Labeling Assistant</div>
+                            <p>Architected GCP-hosted application with Palm and Llama backends for data labeling and quality assurance automation</p>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">AskMe ChatBot</div>
+                            <p>Developed multipurpose Q&A system leveraging LangChain with Chroma vector database for Ford-specific knowledge integration</p>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">Label Suggester</div>
+                            <p>Created natural language text generation tool using LangChain stuffing method to simplify extreme multilabel classification tasks</p>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">BSAQ to JIRA Mapper</div>
+                            <p>Reduced unnecessary JIRA ticket creation by implementing TEXT-BISON embeddings, HDBSCAN, and text generation for warranty concern analysis</p>
+                        </div>
+                        <div class="project">
+                            <div class="project-title">BSAQ Suggester</div>
+                            <p>Developed search-like interface using LangChain MapReduce summarization to optimize engineering concern discovery</p>
+                        </div>
+                        <li><strong>Led innovation</strong> in LLM BERT-multilingual classification for customer satisfaction surveys</li>
+                        <li><strong>Developed</strong> Ford-specific contextualized RoBERTa model for customer feedback categorization</li>
+                        <li><strong>Principal Investigator</strong> for Ford collaboration with 17 Purdue Data Mine students, delivering customer smart-probing ChatBot prototype and data quality protocols</li>
+                        <li><strong>Designed</strong> interactive visualization-based production/marketing recommendation system utilizing streamlit, angular, and the Google Cloud platform</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title"><span class="job-company">University of Michigan</span> - Michigan Data Science Fellow</h3>
+                    <span class="job-date">2020 - 2021</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">NLP</span>
+                    <span class="tag">Explainable AI</span>
+                    <span class="tag">Basketball Analytics</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Led research team</strong> of 6 students generating 3 novel papers on LLMs and automated student writing feedback</li>
+                        <li><strong>Developed</strong> automated peer review coaching application implemented in multiple Winter 2021 courses</li>
+                        <li><strong>Pioneered</strong> ML models for scientific writing evaluation with SHAP/LIME explainers for education applications</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title"><span class="job-company">University of Michigan</span> - sGF2 Project</h3>
+                    <span class="job-date">2014 - 2019</span>
+                </div>
+                <div class="job-tags">
+                    <span class="tag">HPC</span>
+                    <span class="tag">Algorithm Development</span>
+                    <span class="tag">Quantum Mechanics</span>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li><strong>Implemented</strong> cost-effective stochastic implementation of second-order Green's function for realistic solid-state analysis</li>
+                        <li><strong>Optimized</strong> computational performance through parallelization of C++, Fortran, and Python code across thousands of cores</li>
+                        <li><strong>Analyzed</strong> non-parametric bias in quantum mechanical simulations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="degree">Ph.D. in Theoretical Chemistry</div>
+                    <div class="university">University of Michigan, Ann Arbor</div>
+                    <div class="education-date">October 2019</div>
+                </div>
+                <div>Master's Certificate in Computational Design and Discovery</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-list">
+                <div class="skill-category">
+                    <div class="skill-category-title">Technical Expertise</div>
+                    <p>7+ Years Python Development<br>4+ Years NLP/LLM Applications<br>2+ Years GCP Development<br>Palantir Platform Experience<br>Technical Communication</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Programming</div>
+                    <p>Python, Git, C++, Fortran<br>CUDA, Bash, Parallel Computing<br>LangChain, Embeddings<br>HPC Architecture</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Leadership</div>
+                    <p>Cross-functional Collaboration<br>Research Team Leadership<br>Project Management<br>Technical Presentations</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">PUBLICATIONS</h2>
+            <ul class="publications-list">
+                <li>Biomechanical Loads and Their Effects on Player Performance in NCAA D-I Male Basketball Games</li>
+                <li>PeerBERT: Automated Characterization of Peer Review Comments across Courses</li>
+                <li>Detecting High Orders of Cognitive Complexity in Student's Reasoning in Argumentative Writing About Ocean Acidification</li>
+                <li>Error propagation in the fully self-consistent stochastic second-order Green's function method</li>
+                <li>Compute-to-Learn: Authentic Learning via Development of Interactive Computer Demonstrations within a Peer-Led Studio Environment</li>
+                <li>Automating Characterization of Peer Review Comments in Chemistry Courses</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">AWARDS & RECOGNITION</h2>
+            <div class="awards-list">
+                <span class="award">Ford Top Achiever</span>
+                <span class="award">LLM Hackathon Finalist</span>
+                <span class="award">Girl Develop It Databases Scholarship</span>
+                <span class="award">Department of Education GAANN Fellow</span>
+                <span class="award">Transforming Learning for Third Century Fellowship</span>
+                <span class="award">Midwest Theoretical Conference Best Poster</span>
+                <span class="award">AAAS/Science Program for Excellence</span>
+                <span class="award">Simons Collaboration Summer School</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
